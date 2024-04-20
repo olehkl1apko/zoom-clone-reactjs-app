@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 // import { ChatSection } from "@/components/ChatSection";
 import { ParticipantsSection } from "@/components/ParticipantsSection";
-// import { VideoSection } from "@/components/VideoSection";
+import { VideoSection } from "@/components/VideoSection";
 import { getLocalPreviewAndInitRoomConnection } from "@/utils/webRTCHandler";
 
 import "./styles.css";
@@ -39,8 +39,8 @@ const RoomPage = () => {
   return (
     <div className="room_container">
       <ParticipantsSection />
-      {/* <VideoSection />
-      <ChatSection /> */}
+      <VideoSection />
+      {/* <ChatSection /> */}
       <div className="room_label">
         <p className="room_label_paragraph">ID: {roomId} </p>
       </div>
