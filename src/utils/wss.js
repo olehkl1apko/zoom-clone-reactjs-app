@@ -57,12 +57,15 @@ export const connectWithSocketIOServer = () => {
 
 export const createNewRoom = (identity, onlyAudio) => {
   // emit an event to server that we would like to create new room
-  const data = {
-    identity,
-    onlyAudio,
-  };
-
-  socket.emit("create-new-room", data);
+  if (socket) {
+    const data = {
+      identity,
+      onlyAudio,
+    };
+    socket.emit("create-new-room", data);
+  } else {
+    console.error("Socket is not initialized yet");
+  }
 };
 
 export const joinRoom = (identity, roomId, onlyAudio) => {

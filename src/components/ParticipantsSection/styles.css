@@ -1,0 +1,15 @@
+.participants_section_container {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.participants_label {
+  font-weight: 700;
+  color: #9ca5ab;
+  margin-left: 40px;
+  font-size: 16px;
+  text-align: center;
+}

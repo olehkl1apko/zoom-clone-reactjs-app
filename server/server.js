@@ -37,15 +37,18 @@ app.get("/api/room-exists/:roomId", (req, res) => {
 app.get("/api/get-turn-credentials", (_, res) => {
   const client = twilio(accountSid, authToken);
 
-  res.send({ token: null });
-  try {
-    client.tokens.create().then((token) => {
+  client.tokens
+    .create()
+    .then((token) => {
       res.send({ token });
+    })
+    .catch((err) => {
+      console.log(
+        "error occurred when fetching turn server credentials: ",
+        err
+      );
+      res.status(500).send({ token: null });
     });
-  } catch (err) {
-    console.log("error occurred when fetching turn server credentials: ", err);
-    res.send({ token: null });
-  }
 });
 
 const io = require("socket.io")(server, {
