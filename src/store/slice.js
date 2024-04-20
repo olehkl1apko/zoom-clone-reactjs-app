@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// Initial state
 const initialState = {
   identity: "",
   isRoomHost: false,
@@ -14,7 +13,6 @@ const initialState = {
   socketId: null,
 };
 
-// Create slice
 const videoChatSlice = createSlice({
   name: "videoChat",
   initialState,
