@@ -17,6 +17,7 @@
     "react-redux": "^9.1.1",
     "react-router-dom": "^6.22.3",
     "react-spinners": "^0.13.8",
+    "secure-random": "^1.1.2",
     "simple-peer": "^9.11.1",
     "socket.io-client": "^4.7.5"
   },

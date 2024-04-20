@@ -7,3 +7,4 @@ export const selectParticipants = (state) => state.participants;
 export const selectSocketId = (state) => state.socketId;
 export const selectActiveConversation = (state) => state.activeConversation;
 export const selectDirectChatHistory = (state) => state.directChatHistory;
+export const selectMessages = (state) => state.messages;

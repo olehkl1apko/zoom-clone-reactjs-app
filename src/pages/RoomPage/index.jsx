@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
-// import { ChatSection } from "@/components/ChatSection";
 import { ParticipantsSection } from "@/components/ParticipantsSection";
 import { VideoSection } from "@/components/VideoSection";
+import { ChatSection } from "@/components/ChatSection";
 import { getLocalPreviewAndInitRoomConnection } from "@/utils/webRTCHandler";
 
 import "./styles.css";
@@ -40,7 +40,7 @@ const RoomPage = () => {
     <div className="room_container">
       <ParticipantsSection />
       <VideoSection />
-      {/* <ChatSection /> */}
+      <ChatSection />
       <div className="room_label">
         <p className="room_label_paragraph">ID: {roomId} </p>
       </div>
