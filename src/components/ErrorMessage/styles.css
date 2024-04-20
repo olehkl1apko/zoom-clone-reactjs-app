@@ -1,0 +1,12 @@
+.error_message_container {
+  height: 50px;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.error_message_paragraph {
+  color: red;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}

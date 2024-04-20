@@ -9,7 +9,7 @@ const override = {
 export const Loader = () => {
   return (
     <div style={{ textAlign: "center", paddingTop: "50px" }}>
-      <PacmanLoader color={"#8a85ff"} css={override} size={50} />
+      <PacmanLoader color={"rgba(0, 82, 201, 0.7)"} css={override} size={50} />
     </div>
   );
 };

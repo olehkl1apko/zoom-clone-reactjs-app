@@ -3,8 +3,8 @@ import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import "./styles.css";
-import JoinRoomTitle from "./JoinRoomTitle";
-import JoinRoomContent from "./JoinRoomContent";
+import { JoinRoomTitle } from "@/components/JoinRoom/JoinRoomTitle";
+import { JoinRoomContent } from "@/components/JoinRoom/JoinRoomContent";
 import { setIsRoomHost } from "@/store/slice";
 import { selectIsRoomHost } from "@/store/selectors";
 
