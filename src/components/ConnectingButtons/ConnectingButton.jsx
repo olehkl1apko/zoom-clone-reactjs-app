@@ -5,7 +5,11 @@ export const ConnectingButton = ({
 }) => {
   return (
     <button
-      className={createRoomButton ? "create_room_button" : "join_room_button"}
+      className={
+        createRoomButton
+          ? "room_button create_room_button"
+          : "room_button join_room_button"
+      }
       onClick={onClickHandler}
     >
       {buttonText}
